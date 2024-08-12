@@ -4,19 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leroc - Próximamente</title>
-    <link rel="icon" type="image/x-icon" href="src/icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="preload" href="src/background.png" as="image">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos críticos aquí */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #ffffff;
+            background-color: #202020;
+        }
+        .hero {
+            height: 100vh;
+            background-color: #202020;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    <link rel="preload" href="src/background.webp" as="image">
 </head>
 <body>
-    <header class="hero">
+    <div class="hero">
         <nav class="main-nav">
             <div class="logo">
-                <img src="src/Logo.png" alt="Logo de Leroc">
+                <picture>
+                    <source srcset="src/Logo.webp" type="image/webp">
+                    <img src="src/Logo.png" alt="Logo de Leroc" width="300" height="auto">
+                </picture>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
+            <div id="mobile-menu" class="menu-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -51,57 +71,93 @@
                 <p>En Leroc, nos comprometemos con la calidad y la confiabilidad. Ofrecemos servicios de infraestructura y mantenimiento que cumplen con los más altos estándares. Nuestra prioridad es brindar soluciones seguras y efectivas que superen las expectativas de nuestros clientes.</p>
             </div>
         </div>
-    </header>
+    </div>
 
-    <section id="proyectos" class="gallery-section">
+    <section id="proyectos" class="section gallery-section">
         <h2 class="gallery-title">Nuestros Proyectos</h2>
         <div class="gallery-container">
             <div class="gallery-item">
-                <img src="src/prueba1.jpeg" alt="Proyecto 1">
+                <picture>
+                    <source srcset="src/prueba1.webp" type="image/webp">
+                    <img src="src/prueba1.jpeg" alt="Proyecto 1" loading="lazy">
+                </picture>
                 <div class="overlay">Videovigilancia</div>
             </div>
             <div class="gallery-item">
-                <img src="src/prueba2.jpeg" alt="Proyecto 2">
+                <picture>
+                    <source srcset="src/prueba2.webp" type="image/webp">
+                    <img src="src/prueba2.jpeg" alt="Proyecto 2" loading="lazy">
+                </picture>
                 <div class="overlay">Redes</div>
             </div>
             <div class="gallery-item">
-                <img src="src/prueba3.jpeg" alt="Proyecto 3">
+                <picture>
+                    <source srcset="src/prueba3.webp" type="image/webp">
+                    <img src="src/prueba3.jpeg" alt="Proyecto 3" loading="lazy">
+                </picture>
                 <div class="overlay">Redes</div>
             </div>
             <div class="gallery-item">
-                <img src="src/prueba4.jpeg" alt="Proyecto 4">
+                <picture>
+                    <source srcset="src/prueba4.webp" type="image/webp">
+                    <img src="src/prueba4.jpeg" alt="Proyecto 4" loading="lazy">
+                </picture>
                 <div class="overlay">Infraestructura</div>
             </div>
             <div class="gallery-item">
-                <img src="src/prueba5.jpeg" alt="Proyecto 5">
+                <picture>
+                    <source srcset="src/prueba5.webp" type="image/webp">
+                    <img src="src/prueba5.jpeg" alt="Proyecto 5" loading="lazy">
+                </picture>
                 <div class="overlay">Videovigilancia</div>
             </div>
             <div class="gallery-item">
-                <img src="src/prueba6.jpeg" alt="Proyecto 6">
+                <picture>
+                    <source srcset="src/prueba6.webp" type="image/webp">
+                    <img src="src/prueba6.jpeg" alt="Proyecto 6" loading="lazy">
+                </picture>
                 <div class="overlay">Redes</div>
             </div>
             <div class="gallery-item">
-                <img src="src/prueba7.jpeg" alt="Proyecto 7">
+                <picture>
+                    <source srcset="src/prueba7.webp" type="image/webp">
+                    <img src="src/prueba7.jpeg" alt="Proyecto 7" loading="lazy">
+                </picture>
                 <div class="overlay">Telecomunicaciones</div>
             </div>
             <div class="gallery-item">
-                <img src="src/prueba8.jpeg" alt="Proyecto 8">
+                <picture>
+                    <source srcset="src/prueba8.webp" type="image/webp">
+                    <img src="src/prueba8.jpeg" alt="Proyecto 8" loading="lazy">
+                </picture>
                 <div class="overlay">Redes</div>
             </div>
             <div class="gallery-item">
-                <img src="src/prueba9.jpeg" alt="Proyecto 9">
+                <picture>
+                    <source srcset="src/prueba9.webp" type="image/webp">
+                    <img src="src/prueba9.jpeg" alt="Proyecto 9" loading="lazy">
+                </picture>
                 <div class="overlay">Servidores</div>
             </div>
             <div class="gallery-item">
-                <img src="src/prueba10.jpeg" alt="Proyecto 10">
+                <picture>
+                    <source srcset="src/prueba10.webp" type="image/webp">
+                    <img src="src/prueba10.jpeg" alt="Proyecto 10" loading="lazy">
+                </picture>
                 <div class="overlay">Infraestructura</div>
             </div>
             <div class="gallery-item">
-                <img src="src/prueba11.jpeg" alt="Proyecto 11">
+                <picture>
+                    <source srcset="src/prueba11.webp" type="image/webp">
+                    <img src="src/prueba11.jpeg" alt="Proyecto 11" loading="lazy">
+                </picture>
                 <div class="overlay">Mantenimiento PC</div>
             </div>
             <div class="gallery-item">
-                <img src="src/prueba12.jpeg" alt="Proyecto 12">
+                <picture>
+                    <source srcset="src/prueba12.webp" type="image/webp">
+                    <img src="src/prueba12.jpeg" alt="Proyecto 12" loading="lazy">
+                </picture>
                 <div class="overlay">Mantenimiento PC</div>
             </div>
         </div>
@@ -109,33 +165,37 @@
 
     <div class="social-icons">
         <a href="https://wa.me/+523141650550" target="_blank" rel="noopener noreferrer">
-            <img src="src/wasap.png" alt="Contactar por WhatsApp">
+            <img src="src/wasap.webp" alt="Contactar por WhatsApp" width="50" height="50">
         </a>
     </div>
 
-    <footer id="contacto" class="footer">
+    <footer id= "contacto" class="footer">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="src/Logo.png" alt="Logo de Leroc" class="footer-logo-img">
+                <picture>
+                    <source srcset="src/Logo.webp" type="image/webp">
+                    <img src="src/Logo.png" alt="Logo de Leroc" class="footer-logo-img" width="400" height="auto">
+                </picture>
             </div>
             <div class="footer-info">
                 <div class="footer-contact">
-                    <p><i class="fas fa-phone"></i> +52 314 165 05 50</p>
-                    <p><i class="fas fa-envelope"></i> infraestructurasleroc01@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Abel López Llerenas 342, Burócratas, 28048 Colima, Col.</p>
+                    <p>+52 314 165 05 50</p>
+                    <p>infraestructurasleroc01@gmail.com</p>
+                    <p>Abel López Llerenas 342, Burócratas, 28048 Colima, Col.</p>
                 </div>
                 <div class="footer-social">
-                    <a href="https://www.facebook.com/profile.php?id=61563666162962" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/lerocinfraestucturas/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61563666162962" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lerocinfraestucturas/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                     <a href="mailto:infraestructurasleroc01@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>&copy; 2024 Leroc. Todos los derechos reservados.</p>
+                <p>© 2024 Leroc. Todos los derechos reservados.</p>
                 <p>Development by Leroc Software</p>
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
