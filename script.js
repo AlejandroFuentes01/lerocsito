@@ -38,3 +38,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         navLinks.classList.toggle('active');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hero = document.querySelector('.hero');
+    const img = new Image();
+    img.onload = function() {
+        hero.classList.add('bg-loaded');
+    };
+    img.src = 'src/background.png';
+});
